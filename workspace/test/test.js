@@ -17,4 +17,8 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};
+
+
+
+
