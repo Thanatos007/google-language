@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yuyan</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="main.js">
+    </script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="mother">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Choose your Language</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a id="click" onclick="fillBox()" href="#">Chinese</a>
+                <a id="click1" onclick="fillBox1()" href="#">German</a>
+                <a id="click2" onclick="fillBox2()" href="#">Russian</a>
+                <a id="click3" onclick="fillBox3()" href="#">Spanish</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="translate">Search for websites that will help you learn your selected language</h1>
+    </div>
+    <div class="search">
+        <script>
+            (function() {
+             var cx = '010207553172162923829:6im5jtoers8';
+             var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+        <gcse:search></gcse:search>
+    </div>
+    <div id="translateDiv">
+        <h1 class="translate">Translate any english word/sentence into your selected language</h1>
+        <h3 class="translate" id="whatLang">You will be translating English to</h3>
+        <div style="width:50%; margin-right:auto; margin-left:auto;">
+            <form onsubmit = 'return searchWord()'>
+                <input class="inputText" id="inputText" type="text" name="Text to translate" placeholder="Write what you are translating here">
+                <input class="inputbtn" type="submit" placeholder="Translate">
+            </form>
+        </div>
+        <h2 class="translate" id="finalWord"></h2>
+    </div>
+</body>
+
+</html>
